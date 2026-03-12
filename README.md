@@ -1,4 +1,4 @@
-# 🚀 Autonomous Incident Remediation (AIR): The Future of Self-Healing or a Recipe for Chaos?
+# Autonomous Incident Remediation (AIR): The Future of Self-Healing or a Recipe for Chaos?
 
 ## 1. Executive Summary
 This proposal outlines an automated self-healing pipeline for Next.js and Vercel environments. By integrating Claude 3.5 Sonnet and MCP, we aim to eliminate manual hotfixes. However, we must address the "Elephant in the Room": **Can we really trust an AI to patch production code without creating more bugs?** This document explores both the technical architecture and the inherent risks of AI-driven recovery.
@@ -9,7 +9,7 @@ This proposal outlines an automated self-healing pipeline for Next.js and Vercel
 
 
 
-\```mermaid
+```mermaid
 sequenceDiagram
     participant Runtime as Vercel Production
     participant Slack as Slack MCP (Orchestrator)
@@ -31,7 +31,7 @@ sequenceDiagram
         CI-->>Slack: [DANGER] AI Patch Failed Validation
         Note right of Slack: Escalating to Human (Emergency)
     end
-\```
+```
 
 ---
 
@@ -90,5 +90,5 @@ We are aware of the skepticism. Letting an AI write and deploy code autonomously
 
 ---
 
-### 💡 GitHub Integration Note
+### GitHub Integration Note
 Copy this content into your `README.md`. GitHub will render the **Mermaid** diagram and **LaTeX** math perfectly. Remember to replace the `\` inside the code blocks after pasting.
